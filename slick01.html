@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slick-img">
+                <img src="./img/マカロン切り抜き/マカロン1.png" alt="" />
+            </div>
+            <div class="slick-img">
+                <img src="./img/マカロン切り抜き/マカロン2.png" alt="" />
+            </div>
+            <div class="slick-img">
+                <img src="./img/マカロン切り抜き/マカロン3.png" alt="" />
+            </div>
+            <div class="slick-img">
+                <img src="./img/マカロン切り抜き/マカロン4.png" alt="" />
+            </div>
+            <div class="slick-img">
+                <img src="./img/マカロン切り抜き/マカロン5.png" alt="" />
+            </div>
+            <div class="slick-img">
+                <img src="./img/マカロン切り抜き/マカロン6.png" alt="" />
+            </div>
+        </div>
+    </div>
+    <style>
+        .slick-prev {
+            left: 0;
+            z-index: 1;
+        }
+
+        .slick-img {
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+        .slick-img img {
+            height: auto;
+            width: 50%;
+            padding-left: 25%;
+        }
+
+        @media (max-width: 600px) {
+            .slick-img img {
+                width: 100%;
+                padding-left: 0;
+            }
+        }
+
+
+        .slick-next {
+            right: 0;
+        }
+
+        .container .slick-num {
+            background-color: rgba(255, 255, 255, .5);
+            bottom: 0;
+            font-size: 18px;
+            left: 0;
+            line-height: 2;
+            position: absolute;
+            right: 0;
+            text-align: center;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: #c08e8e;
+            font-size: 30px;
+
+        }
+
+        .slick-prev {
+            left: 25%;
+        }
+
+        .slick-next {
+            right: 25%;
+        }
+
+        @media (max-width: 600px) {
+            .slick-prev {
+            left: 5%;
+        }
+
+        .slick-next {
+            right: 5%;
+        }
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(function () {
+            $(".slider")
+                .slick({
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 3,
+                    autoplay: false,
+                    responsive: [
+                        {
+                            breakpoint: 1024,
+                            settings: {
+                                // arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 3
+                            }
+                        },
+                        {
+                            breakpoint: 600,
+                            settings: {
+                                // arrows: false,
+                                centerMode: true,
+                                centerPadding: '40px',
+                                slidesToShow: 1
+                            }
+                        }
+                    ]
+                });
+        });
+
+    </script>
+</body>
+
+</html>

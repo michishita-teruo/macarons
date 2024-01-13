@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+
+
+/* #region newitems */
+
+
+#newitems li {
+    position: relative;
+}
+
+#newitems .choice-btn li {
+    border-radius: 10px;
+}
+
+.items_title {
+    font-family: 'Sawarabi Mincho', serif;
+    color: #adadad;
+
+}
+
+span.detail-price h2 {
+    margin: 1rem 0;
+    text-align: center;
+    font-family: 'Sawarabi Mincho', serif;
+}
+
+span.detail-price p {
+    font-family: 'Sawarabi Mincho', serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    color: #adadad;
+}
+
+span.detail-price h4 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-family: 'Sawarabi Mincho', serif;
+    font-weight: normal;
+}
+
+span.detail-price button {
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    font-family: 'Sawarabi Mincho', serif;
+    color: #808080;
+    background: #f3e9e8;
+    border: solid 1px #808080;
+}
+
+
+
+#newitems .choice-btn li .detail-cap {
+    font-size: 0.8rem;
+}
+
+#newitems img {
+    width: 100% !important;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.gallery {
+    width: 50%;
+}
+
+.gallery .slick-track {
+    left: 40%;
+}
+
+@media (max-width: 1024px) {
+    .gallery .slick-track {
+        left: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .gallery {
+        /* margin: 0 0 20px 0; */
+        left: -10%;
+        width: 100%;
+    }
+
+    .gallery .slick-track {
+        left: 30%;
+    }
+}
+
+
+.choice-btn li {
+    cursor: pointer;
+    outline: none;
+    width: 23% !important;
+    margin: 0 1%;
+}
+
+@media screen and (max-width:350px) {
+    .choice-btn li {
+        width: 48% !important;
+        margin: 0 1% 10px 1%;
+    }
+}
+
+.choice-btn li img {
+    opacity: 0.6;
+}
+
+.choice-btn li.slick-current img {
+    opacity: 1;
+}
+
+.choice-btn .slick-track {
+    transform: unset !important;
+}
+
+/* #endregion newitems */
+
+/* #region gift */
+
+.gift_flex:nth-of-type(2) .gift_box:nth-of-type(1) {
+    position: relative;
+}
+
+.gift_flex:nth-of-type(2) .gift_box:nth-of-type(1):before {
+    content: "季節限定";
+    position: absolute;
+    transform: rotate(30deg);
+    top: 0%;
+    right: -5%;
+    padding: 1rem;
+    height: auto;
+    width: auto;
+    border: 2px dashed white;
+    border-radius: 50%;
+    background-color: #ffe4e4;
+
+    font-family: 'Sawarabi Mincho', serif;
+    color: white;
+}
+
+.gift_box img {
+    object-fit: contain;
+}
+
+.gift_text p {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    color: #adadad;
+}
+
+.gift_text h4 {
+    margin-top: 0.5rem;
+    font-size: 1.5em;
+    font-family: 'Sawarabi Mincho', serif;
+    font-weight: normal;
+    color: #adadad;
+
+}
+
+/* #endregion gift */
